@@ -4,14 +4,30 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-image: url(./assets/orqaFon.png);
+  align-items: center;
+  background: linear-gradient(135deg, #1c1c1c, #2e2e2e, #3d3d3d, #2a2a2a);
+  background-size: 400% 400%;
+  animation: grayBackground 15s ease infinite;
   color: white;
+  font-family: sans-serif;
+}
+
+  
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .music {
   display: flex;
@@ -24,7 +40,7 @@ body {
 }
 .music img {
   width: calc(500 / 14.4 * 1vw);
-  height: calc(380 / 14.4 * 1vw);
+  height: calc(400 / 14.4 * 1vw);
   border-radius: calc(20 / 14.4 * 1vw);
 }
 .music h3 {
@@ -37,3 +53,54 @@ body {
   width: 100%;
   margin-top: calc(26 / 14.4 * 1vw);
 }
+.music-center {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+}
+.music-center p {
+  font-family: Jaini Purva;
+  font-weight: 400;
+  font-size: calc(14 / 14.4 * 1vw);
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.music-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(44 / 14.4 * 1vw);
+  margin-top: calc(42 / 14.4 * 1vw);
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: calc(36 / 14.4 * 1vw);
+  height: calc(36 / 14.4 * 1vw);
+}
+hr {
+  width: calc(500 / 14.4 * 1vw);
+  height: calc(5 / 14.4 * 1vw);
+  border-radius: calc(5 / 14.4 * 1vw);
+  background-color: #d9d9d9;
+}
+
+.previous,
+.next,
+.play img {
+  width: calc(36 / 14.4 * 1vw);
+  height: calc(36 / 14.4 * 1vw);
+}
+.music-next-play {
+  width: calc(80 / 14.4 * 1vw);
+  height: calc(80 / 14.4 * 1vw);
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

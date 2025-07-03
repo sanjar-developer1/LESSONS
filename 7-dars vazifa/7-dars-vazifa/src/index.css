@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 0 calc(80 / 19 * 1vw);
+  border: 2px solid red;
+}
