@@ -1,0 +1,133 @@
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+}
+/* Universal styles for all themes */
+.light,
+.dark,
+.nature,
+.sunset,
+.galaxy,
+.ocean,
+.gold,
+.aurora,
+.mint,
+.candy,
+.midnight,
+.sunshine,
+.coral {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.4s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 1. Light Theme */
+.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* 2. Dark Theme */
+.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* 3. Nature (Yashil) */
+.nature {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  color: #f0fff0;
+}
+
+/* 4. Sunset (Tungi pushti) */
+.sunset {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: #ffffff;
+}
+
+/* 5. Galaxy (Moviy-binafsha) */
+.galaxy {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+}
+
+/* 6. Ocean (Ko‘k-binafsha) */
+.ocean {
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  color: #e0f7fa;
+}
+
+/* 7. Gold (Tilla uslub) */
+.gold {
+  background: linear-gradient(to right, #fbd786, #f7797d);
+  color: #3e2723;
+}
+
+/* 8. Aurora (Ko‘k-yashil-pushti) */
+.aurora {
+  background: linear-gradient(135deg, #00c9ff, #92fe9d, #fbc2eb);
+  color: #1a1a1a;
+}
+
+/* 9. Mint (Yumshoq ko‘k-yashil) */
+.mint {
+  background: linear-gradient(to right, #a1ffce, #faffd1);
+  color: #003333;
+}
+
+/* 10. Candy (Yorqin pushti-och moviy) */
+.candy {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #4a148c;
+}
+
+/* 11. Midnight (Sokin qoramtir) */
+.midnight {
+  background: linear-gradient(to right, #232526, #414345);
+  color: #ffffff;
+}
+
+/* 12. Sunshine (Yorqin sariq va oq) */
+.sunshine {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  color: #4e342e;
+}
+
+/* 13. Coral (Yumshoq pushti-norang'i) */
+.coral {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #3e2723;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease-in-out;
+}
