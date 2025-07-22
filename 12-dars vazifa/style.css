@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #9ca3f9, #6366f1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 213.92px;
+  leading-trim: NONE;
+  line-height: 210.8px;
+  letter-spacing: 15%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
